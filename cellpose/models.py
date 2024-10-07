@@ -54,7 +54,7 @@ def model_path(model_type, model_index=0):
 
 
 def size_model_path(model_type):
-    if os.path.exists(model_type):
+    if os.path.exists(model_type + "_size.npy"):
         return model_type + "_size.npy"
     else:
         torch_str = "torch"
